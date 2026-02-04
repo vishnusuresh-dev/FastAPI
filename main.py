@@ -5,7 +5,7 @@ app = FastAPI()
 @app.get("/shipment")
 def get_shipment():
   return {
-    "status":"In transit"
+    "status" : "In transit"
   }
   
 @app.get("/scalar", include_in_schema=False)
