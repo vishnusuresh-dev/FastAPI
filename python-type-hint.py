@@ -2,7 +2,7 @@
 #we can add type hints to variables which helps to understand while data type is that particular variable is expecting
 
 #Eg:
-
+from typing import Any
 
 num : int = 10
 decimal : float = 1.0
@@ -12,7 +12,7 @@ list1: list[int | str] = [15,"january",2000] # pipe operator for multiple expect
 
 date: tuple[int,...] = (10,5,2024) #as it expects multiple integer values (for tuple ... should be used)
 
-dictionary: dict[str ,str | int] = {
+dictionary: dict[str ,Any] = {
   "state" : "Kerala",
   "dist" : "Tvm",
   "pincode": 545454
