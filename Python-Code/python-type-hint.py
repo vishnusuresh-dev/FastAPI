@@ -2,7 +2,7 @@
 #we can add type hints to variables which helps to understand while data type is that particular variable is expecting
 
 #Eg:
-from typing import Any
+from typing import Any, Callable
 
 num : int = 10
 decimal : float = 1.0
@@ -32,4 +32,10 @@ def get_value(num: int,exp: int | float | None) -> float:
 
 print(get_value(25, None))
 
+def fun1( func: Callable[[int, int],Any]): #callable is function, [int, int] means that fn expects 2 args and Any means returns Any data type
+  pass
 
+def fun2():
+  pass
+
+fun1(fun2)
